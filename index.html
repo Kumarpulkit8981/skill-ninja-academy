@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Ninja Academy - Registration Portal</title>
+    <!--Favicon link -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Skill Ninja Logo" class="logo-img">
+            <span class="logo-text">Skill Ninja Academy</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">About</a></li>
+            <li><a href="#register">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Master Tech Skills Today</h1>
+            <p>Join world-class programs in Computer Science, Web Development, and IT Networks.</p>
+            <a href="#register" class="btn hero-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Course Cards Section -->
+    <section id="courses" class="courses-container">
+        <h2>Featured Programs</h2>
+        <div class="card-grid">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images/card-1.png" alt="B.Tech Computer Science" class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3>B.Tech Computer Science</h3>
+                    <p>Master programming fundamentals, data structures, algorithms, and core software engineering.</p>
+                    <a href="#register" class="btn card-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images/card-2.png" alt="BCA MCA Program" class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3>BCA & MCA Programs</h3>
+                    <p>Build real-world full-stack web applications using modern HTML, CSS, JavaScript, and PHP backend frameworks.</p>
+                    <a href="#register" class="btn card-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images/card-3.png" alt="B.Sc Information Technology" class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3>B.Sc Information Technology</h3>
+                    <p>Learn computer networking, OSI model architecture, cloud systems, and database administration.</p>
+                    <a href="#register" class="btn card-btn">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Responsive Form Section -->
+    <section id="register" class="form-container">
+        <h2>Student Registration</h2>
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Program</label>
+                <select id="course" required>
+                    <option value="">-- Choose Course --</option>
+                    <option value="cs">B.Tech Computer Science</option>
+                    <option value="web">BCA / MCA Program</option>
+                    <option value="it">B.Sc Information Technology</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Skill Ninja Academy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
